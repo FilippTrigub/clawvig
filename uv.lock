@@ -180,6 +180,23 @@ wheels = [
 ]
 
 [[package]]
+name = "clawvig"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "ffmpeg-normalize" },
+    { name = "ffmpeg-python" },
+    { name = "pycaps", extra = ["all"] },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "ffmpeg-normalize" },
+    { name = "ffmpeg-python" },
+    { name = "pycaps", extras = ["all"], git = "https://github.com/francozanardi/pycaps.git" },
+]
+
+[[package]]
 name = "click"
 version = "8.3.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1207,23 +1224,6 @@ all = [
     { name = "openai-whisper" },
     { name = "playwright" },
     { name = "pywebview" },
-]
-
-[[package]]
-name = "pycaps-service"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "ffmpeg-normalize" },
-    { name = "ffmpeg-python" },
-    { name = "pycaps", extra = ["all"] },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "ffmpeg-normalize" },
-    { name = "ffmpeg-python" },
-    { name = "pycaps", extras = ["all"], git = "https://github.com/francozanardi/pycaps.git" },
 ]
 
 [[package]]
