@@ -1,16 +1,18 @@
 ---
 name: clawvig
-description: Instagram video enhancement and captioning pipeline. Use this skill when the user wants to process, enhance, grade, or caption videos for Instagram — including sharpening, colour grading, warmth adjustments, audio normalisation, or burning animated captions. Keywords: enhance video, caption video, instagram preset, cinematic, vivid, natural, ffmpeg, pycaps, -14 LUFS.
-homepage: https://github.com/FilippTrigub/clawvig
-user-invocable: false
+description: >-
+  Instagram video enhancement and captioning pipeline. Use this skill when 
+  the user wants to process, enhance, grade, or caption videos for 
+  Instagram — including sharpening, colour grading, warmth adjustments, 
+  audio normalisation, or burning animated captions. 
 metadata:
-        {
-           "openclaw":
-                   {
-                      "emoji": "🎬",
-                      "requires": { "bins": ["ffmpeg", "uv"] }
-                   }
-        }
+  {
+    "openclaw":
+      {
+        "emoji": "🎬",
+        "requires": { "bins": ["ffmpeg", "uv"] },
+      },
+  }
 ---
 
 # clawvig — Instagram Video Pipeline
